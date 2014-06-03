@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.1.*",
-		"laracasts/utilities": "1.0"
+		"laracasts/utilities": "1.0",
+		"phpunit/phpunit": "4.0.*"
 	},
 	"autoload": {
 		"classmap": [
@@ -14,7 +15,8 @@
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",
-			"app/tests/TestCase.php"
+			"app/tests/TestCase.php",
+			"app/libraries"
 		]
 	},
 	"scripts": {

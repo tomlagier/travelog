@@ -17,9 +17,10 @@ class TripController extends BaseController {
 
 	protected $layout = 'layouts.main';
 
-	public function getTrip($tripId = 3)
+	public function trip($tripId = 1)
 	{
-		$trip = Trip::with('photos', 'spots.photos')->find($tripId);
+		//Get our correctly formatted date strings
+		$trip = Trip::getTrip($tripId);
 
 		JavaScript::put([
 			'trip' => $trip->toJson(),
@@ -28,7 +29,7 @@ class TripController extends BaseController {
 		//Get spots from database
 		//Prepare spots for display
 		//Pass spots to frontend
-		return View::make('trip.trip');
+		return View::make('trip.trip')->with('trip', $trip);
 
 	}
 

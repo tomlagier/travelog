@@ -1,5 +1,20 @@
 @import url(http://fonts.googleapis.com/css?family=Kreon:400,700);
-
+/**
+ * Colors
+ */
+/**
+ * Spacing
+ */
+/**
+ * Images
+ */
+/**
+ * Shadows
+ */
+/**
+ * Fonts
+ */
+/* line 5, ../sass/master.scss */
 html,
 body {
   height: 100%;
@@ -8,12 +23,14 @@ body {
   font: normal 14px arial,sans-serif;
 }
 
+/* line 12, ../sass/master.scss */
 .row {
-  margin-left:0px;
-  margin-right:0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* Wrapper for page content to push down footer */
+/* line 18, ../sass/master.scss */
 #wrap {
   min-height: 100%;
   height: auto !important;
@@ -25,199 +42,226 @@ body {
 }
 
 /* Set the fixed height of the footer here */
+/* line 29, ../sass/master.scss */
 #footer {
   height: 60px;
-  margin-top:50px;
-  padding-top:20px;
-  padding-bottom:20px;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
 
 /* Custom page CSS
 -------------------------------------------------- */
-
+/* line 40, ../sass/master.scss */
 #wrap > .container {
   padding: 60px 15px 0;
 }
+
+/* line 43, ../sass/master.scss */
 .container .credit {
   margin: 20px 0;
 }
 
+/* line 47, ../sass/master.scss */
 #footer {
-  background-color:#414141;
+  background-color: #414141;
 }
 
+/* line 51, ../sass/master.scss */
 #footer a {
-  color:#efefef;
+  color: #efefef;
 }
 
-h1,h2,h3,h4 {
+/* line 55, ../sass/master.scss */
+h1, h2, h3, h4 {
   font-family: 'Kreon', serif;
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
+/* line 60, ../sass/master.scss */
 header {
   background: #f16251;
-  height:550px;
-  color:#000000;
+  height: 550px;
+  color: #000000;
 }
 
-header h1,header h2,header h3 a,header a,header a:hover {
-  color:#101010;
-  font-weight:800;
-  text-decoration:none;
+/* line 66, ../sass/master.scss */
+header h1, header h2, header h3 a, header a, header a:hover {
+  color: #101010;
+  font-weight: 800;
+  text-decoration: none;
 }
 
+/* line 72, ../sass/master.scss */
 header h3 {
   font-family: 'Kreon', serif;
   background: #ffcc33;
-  padding:10px;
-  border-radius:3px;
-  font-size:34px;
-  padding:12px 10px 6px 10px;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 34px;
+  padding: 12px 10px 6px 10px;
 }
 
+/* line 81, ../sass/master.scss */
 header .dropdown-menu {
-  top:74px;
+  top: 74px;
   background: #ffcc33;
-  border-width:0;
+  border-width: 0;
 }
 
+/* line 87, ../sass/master.scss */
 h1 {
-  font-size:50px;
+  font-size: 50px;
 }
 
+/* line 91, ../sass/master.scss */
 #nav {
   width: 100%;
-  position:static;
-  top:-32px;
+  position: static;
+  top: -32px;
 }
 
+/* line 97, ../sass/master.scss */
 #nav.affix {
-   position: fixed;
-   top: 0;
-   z-index:10;
-   -webkit-transition: all .6s ease-in-out;
-   height: 52px;
-}
-
-#footer > .container {
-  
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  -webkit-transition: all .6s ease-in-out;
+  height: 52px;
 }
 
 @media (min-width: 767px) {
-  .navbar-nav.nav-justified > li{
-      float:none;
+  /* line 110, ../sass/master.scss */
+  .navbar-nav.nav-justified > li {
+    float: none;
   }
 }
+/* line 114, ../sass/master.scss */
 .navbar-nav {
-  margin: 1px 1px; 
-}  
-  
-/* customize nav style */
-.navbar-custom {
-    background-color: #2e2e2e;
-  font-weight:700;
-    text-transform:uppercase;
-    border-width:0;
+  margin: 1px 1px;
 }
-.navbar-custom  .navbar-nav>li>a {
+
+/* customize nav style */
+/* line 119, ../sass/master.scss */
+.navbar-custom {
+  background-color: #2e2e2e;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-width: 0;
+}
+
+/* line 125, ../sass/master.scss */
+.navbar-custom .navbar-nav > li > a {
   color: #ddd;
 }
-.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
+
+/* line 128, ../sass/master.scss */
+.navbar-custom .navbar-nav li > a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a {
   background-color: #000;
 }
-.navbar-custom .dropdown-menu{
-  right:0;
+
+/* line 131, ../sass/master.scss */
+.navbar-custom .dropdown-menu {
+  right: 0;
 }
-.navbar-custom .navbar-nav>.dropdown>a .caret {
+
+/* line 134, ../sass/master.scss */
+.navbar-custom .navbar-nav > .dropdown > a .caret {
   border-top-color: #999;
   border-bottom-color: #999;
 }
 
-.navbar-collapse.in { /*3.0.2 bug workaround*/
-    overflow-y: visible;
+/* line 139, ../sass/master.scss */
+.navbar-collapse.in {
+  /*3.0.2 bug workaround*/
+  overflow-y: visible;
 }
 
+/* line 143, ../sass/master.scss */
 .navbar-toggle {
-  outline:0;
+  outline: 0;
 }
 
+/* line 147, ../sass/master.scss */
 .divider {
-  height:100px;
-}
-
-.panel {
-  border-width:0;
+  height: 100px;
 }
 
 @media (max-width: 768px) {
+  /* line 152, ../sass/master.scss */
   header {
     height: 95px;
   }
 }
-
+/* line 157, ../sass/master.scss */
 #map-canvas {
-    width: 100%; 
-    height: 300px;
+  width: 100%;
+  height: 300px;
   margin: 0;
   padding: 15px;
 }
 
+/* line 164, ../sass/master.scss */
 .scroll-top {
-   position:fixed;
-   bottom:0;
-   right:6%;
-   z-index:100;
-   background: #ffcc33;
-   font-size:24px;
-   border-top-left-radius:3px;
-   border-top-right-radius:3px;
+  position: fixed;
+  bottom: 0;
+  right: 6%;
+  z-index: 100;
+  background: #ffcc33;
+  font-size: 24px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
-.scroll-top a:link,.scroll-top a:visited {
-  color:#222;
-} 
- 
 
+/* line 174, ../sass/master.scss */
+.scroll-top a:link, .scroll-top a:visited {
+  color: #222;
+}
+
+/* line 179, ../sass/master.scss */
 section {
   color: #ffffff;
   min-height: 400px;
   height: auto !important;
   height: 100%;
-  padding-top:100px;
+  padding-top: 100px;
 }
 
+/* line 187, ../sass/master.scss */
 .bg-1 {
-  background: url('http://www.bootply.com/assets/example/bg_4.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url("http://www.bootply.com/assets/example/bg_4.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+/* line 195, ../sass/master.scss */
 .bg-2 {
-  background: url('http://www.bootply.com/assets/example/bg_5.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url("http://www.bootply.com/assets/example/bg_5.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+/* line 203, ../sass/master.scss */
 .bg-3 {
-  background: url('http://www.bootply.com/assets/example/bg_6.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url("http://www.bootply.com/assets/example/bg_6.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+/* line 211, ../sass/master.scss */
 .bg-4 {
-  padding-top:30px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20,20,20,0.2)),to(rgba(255,255,255,0)), color-stop(1,#000));
+  padding-top: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, 0.2)), to(rgba(255, 255, 255, 0)), color-stop(1, black));
 }
 
 /* My styles */
-
-#content{
+/* line 218, ../sass/master.scss */
+#content {
   padding-top: 52px;
 }

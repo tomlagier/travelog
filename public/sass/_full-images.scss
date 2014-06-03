@@ -1,0 +1,25 @@
+/** To create full-size images **/
+.full-image-wrapper{
+
+	overflow: hidden;
+
+	.height-constrain{
+		height: 100%;
+		width: auto;
+	}
+
+	.width-constrain{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.height-bound{
+	height: 100%;
+	width: auto;
+}
+
+.width-bound{
+	width: 100%;
+	height: auto;
+}

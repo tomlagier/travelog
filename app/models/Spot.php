@@ -18,4 +18,8 @@ class Spot extends Eloquent {
         return $this->morphToMany('Photo', 'imageable');
     }
 
+    public function image(){
+    	return $this->belongsTo('Photo', 'featured_image');
+    }
+
 }

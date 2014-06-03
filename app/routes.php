@@ -11,5 +11,8 @@
 |
 */
 
-Route::get('/trip/{num?}', 'TripController@getTrip');
+Route::get('/trip/{num?}', 'TripController@trip');
 Route::get('/', 'HomeController@showIndex');
+Route::get('/transitions-demo', function(){
+	return View::make('transitions');
+});

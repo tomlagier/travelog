@@ -18,6 +18,7 @@ Travelog.createMap = function(){
 	//Placeholder until bounds are set
 	var mapOptions = {
     	center: Travelog.trip.spots[0].location,
+    	scrollwheel: false,
     	zoom: 8
   	};
   

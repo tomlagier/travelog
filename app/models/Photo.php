@@ -16,4 +16,12 @@ class Photo extends Eloquent {
     public function trips(){
     	return $this->morphedByMany('Trip', 'imageable');
     }
+
+    public function spot(){
+    	return $this->belongsTo('Spot', 'id', 'featured_image');
+    }
+
+    public function trip(){
+    	return $this->belongsTo('Trip', 'id', 'featured_image');
+    }
 }
